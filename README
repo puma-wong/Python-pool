@@ -1,24 +1,24 @@
 Hello World!!!
 
-# 我的第一个GitHub项目
+# 锟揭的碉拷一锟斤拷GitHub锟斤拷目
 
-这是项目 [helloworld](https://github.com/gotgithub/helloworld) ，
-欢迎访问。
+锟斤拷锟斤拷锟斤拷目 [helloworld](https://githgithub.com/puma-wong/My-Rep-Python
+锟斤拷迎锟斤拷锟绞★拷
 
-这个项目的版本库是 **Git格式** ，在 Windows、Linux、Mac OS X
-平台都有客户端工具可以访问。虽然版本库只提供Git一种格式，
-但是你还是可以用其他用其他工具访问，如 ``svn`` 和 ``hg`` 。
+锟斤拷锟斤拷锟斤拷目锟侥版本锟斤拷锟斤拷 **Git锟斤拷式** 锟斤拷锟斤拷 Windows锟斤拷Linux锟斤拷Mac OS X
+平台锟斤拷锟叫客伙拷锟剿癸拷锟竭匡拷锟皆凤拷锟绞★拷锟斤拷然锟芥本锟斤拷只锟结供Git一锟街革拷式锟斤拷
+锟斤拷锟斤拷锟姐还锟角匡拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟竭凤拷锟绞ｏ拷锟斤拷 ``svn`` 锟斤拷 ``hg`` 锟斤拷
 
-## 版本库地址
+## 锟芥本锟斤拷锟斤拷址
 
-支持三种访问协议：
+支锟斤拷锟斤拷锟街凤拷锟斤拷协锟介：
 
-* HTTP协议: `https://github.com/gotgithub/helloworld.git` 。
-* Git协议: `git://github.com/gotgithub/helloworld.git` 。
-* SSH协议: `ssh://git@github.com/gotgithub/helloworld.git` 。
+* HTTP协锟斤拷: `https://github.com/puma-wong/My-Rep-Python銆俫it` 锟斤拷
+* Git协锟斤拷: `git://github.com/puma-wong/My-Rep-Pythong銆俰t` 锟斤拷
+* SSH协锟斤拷: `ssh://git@gigithub.com/puma-wong/My-Rep-Python銆俫it` 锟斤拷
 
-## 克隆版本库
+## 锟斤拷隆锟芥本锟斤拷
 
-操作示例：
+锟斤拷锟斤拷示锟斤拷锟斤拷
 
     $ git clone git://github.com/gotgithub/helloworld.git
