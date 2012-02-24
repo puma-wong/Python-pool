@@ -1,4 +1,5 @@
 Hello World!!!
+This is my first github example~
 
 下面就演示一下当收到他人的Pull Request后，该如何手动合并。实际上在很多情况下，Pull Request所含提交有可能造成合并冲突，那样的话GitHub不再、也不能提供自动合并功能，就必须采用手工合并的方式。
 将Pull Request发出者的派生版本库添加为一个新的源。
