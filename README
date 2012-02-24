@@ -1,24 +1,46 @@
 Hello World!!!
 
-# �ҵĵ�һ��GitHub��Ŀ
-
-������Ŀ [helloworld](https://githgithub.com/puma-wong/My-Rep-Python
-��ӭ���ʡ�
-
-������Ŀ�İ汾���� **Git��ʽ** ���� Windows��Linux��Mac OS X
-ƽ̨���пͻ��˹��߿��Է��ʡ���Ȼ�汾��ֻ�ṩGitһ�ָ�ʽ��
-�����㻹�ǿ������������������߷��ʣ��� ``svn`` �� ``hg`` ��
-
-## �汾����ַ
-
-֧�����ַ���Э�飺
-
-* HTTPЭ��: `https://github.com/puma-wong/My-Rep-Python。git` ��
-* GitЭ��: `git://github.com/puma-wong/My-Rep-Pythong。it` ��
-* SSHЭ��: `ssh://git@gigithub.com/puma-wong/My-Rep-Python。git` ��
-
-## ��¡�汾��
-
-����ʾ����
-
-    $ git clone git://github.com/gotgithub/helloworld.git
+下面就演示一下当收到他人的Pull Request后，该如何手动合并。实际上在很多情况下，Pull Request所含提交有可能造成合并冲突，那样的话GitHub不再、也不能提供自动合并功能，就必须采用手工合并的方式。
+将Pull Request发出者的派生版本库添加为一个新的源。
+例如收到来自gotgithub用户的Pull Request，不妨以gotgithub为名添加新的源。
+$ git remote add gotgithub https://github.com/gotgithub/gotgit.git
+此时版本库中有两个源，一个克隆时自动建立的origin，另外一个就是新增加的gotgithub。
+$ git remote -v
+gotgithub       https://github.com/gotgithub/gotgit.git (fetch)
+gotgithub       https://github.com/gotgithub/gotgit.git (push)
+origin  git@github.com:gotgit/gotgit.git (fetch)
+origin  git@github.com:gotgit/gotgit.git (push)
+获取远程版本库gotgithub的分支和提交。
+$ git fetch gotgithub
+From https://github.com/gotgithub/gotgit
+ * [new branch]      gh-pages   -> gotgithub/gh-pages
+ * [new branch]      master     -> gotgithub/master
+现在除了本地分支master外，还有若干远程分支，如下：
+$ git branch -a
+* master
+  remotes/gotgithub/gh-pages
+  remotes/gotgithub/master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/gh-pages
+  remotes/origin/master
+将远程分支remotes/gotgithub/master（可简写为gotgithub/master）合并到当前分支中。
+$ git merge gotgithub/master
+Updating 00c6c4b..7ecdfe7
+Fast-forward
+ errata.mkd |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+查看提交说明，看到此次合并没有产生不必要的合并提交。
+$ git log --graph -2
+* commit 7ecdfe7451412cfb2e65bb47c12cf2162e21c841
+| Author: Wang Sheng <wangsheng@ossxp.com>
+| Date:   Tue Aug 16 10:17:53 2011 +0800
+|
+|     Fixed #3: should be 项目, not 项.
+|
+* commit 00c6c4bfab9824bd967440902ce87440f9e87852
+| Author: Jiang Xin <worldhello.net@gmail.com>
+| Date:   Wed Aug 3 11:50:31 2011 +0800
+|
+|     Change font color for stronger text from red to brown.
+将合并推送到GitHub版本库中。
+$ git push
