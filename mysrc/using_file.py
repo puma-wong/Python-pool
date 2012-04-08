@@ -2,7 +2,6 @@
 # Filename: using_file.py
 
 poem = '''\
-1
 abc23
 
 Programming is fun
