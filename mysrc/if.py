@@ -1,4 +1,4 @@
-number = 23
+number = 30
 guess = float(raw_input('Enter an integer : '))
 
 if guess == number:
